@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+# Place.delete_all <- use this so you don't get duplicates 
+# Place.create! name: "Table Mountain", address: "123 Meep St"
+# Place.create! mame: "Lion's Head", address: "56 Hai Rd"
