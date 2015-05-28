@@ -21,3 +21,13 @@ ActiveRecord::Schema.define(version: 20150526212047) do
   end
 
 end
+
+# when trying to add things to database:
+# rails generate migration add_address_to_places address:string (or remove_address_from_places)
+# must run rake db:migrate to SAVE CHANGES to database
+
+# rake db:rollback (recalls most recent MIGRATION, so you can fix mistakes)
+# if you rollback more than once, just delete the database
+
+# DELETING DATABASE
+# rake db:drop db:create db:migrate db:seed

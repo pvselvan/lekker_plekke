@@ -1,10 +1,12 @@
-<h1>Listing Places</h1>
+<h1>Da Best Places in Cape Town</h1>
 
 <% @places.each do |place| %>
 
 	<p>
 	  <strong>Place:</strong>
-	  <%= place.name %>
+	  <%= link_to place.name, place_path(place) %>
 	</p>
 	 
 <% end %>
+
+<%= link_to 'New Plekke', new_place_path %>
